@@ -28,6 +28,7 @@ p{font-size: 14px;
 	margin-bottom: 15px;
 	letter-spacing: 0.10em;
 	line-height: 1.6em;}
+p.desc{font-size: 1.4em;}
 em,li,li a{font-size:16px;font-weight:500;color:#000}
 a{color:#81848f}
 a:active,a:focus,a:hover{color:#ff0000;}
@@ -80,7 +81,7 @@ h2{font-size: 30px;
 }
 hr.vertical {
     width: 0px;
-    height: 200px;
+    height: 100px;
     display: block;
     border-style: solid;
     border-color: #000;
@@ -458,6 +459,7 @@ hr.vertical {
 	h2 {
 		font-size: 1.6em;
 	}
+	p.desc{font-size: 1em;}
 	.bottom-less{
 		margin-bottom: -40px;
 	}
