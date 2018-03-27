@@ -108,7 +108,7 @@ hr.vertical {
 .accordion .panel-default>.panel-heading{color:#ffd200;background:#000;border:none;padding:0}
 .accordion .panel-title-child{display:block;padding:30px;background-color: #000;color: #00e5ff;}
 .accordion .panel-group .panel+.panel{border-radius:0;margin-top:10px}
-.accordion .panel-default>.panel-heading+.panel-collapse>.panel-body{font-size:16px;border-top:none;padding:0 30px 30px;margin-top:-1px}
+.accordion .panel-default>.panel-heading+.panel-collapse>.panel-body{font-size:18px;border-top:none;padding:0 30px 30px;margin-top:-1px}
 .accordion .collapse.in,.accordion [aria-expanded=true]{color:#fff;background:#000;}
 .btn-theme{position:relative;display:inline-block;text-align:center;background-image:none;border-style:solid;white-space:nowrap;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 .btn-theme:hover{transition-duration:.3s;transition-property:all;transition-timing-function:cubic-bezier(.7,1,.7,1)}
@@ -116,7 +116,7 @@ hr.vertical {
 .btn-theme.disabled,.btn-theme[disabled],fieldset[disabled] .btn-theme{cursor:not-allowed;box-shadow:none;opacity:.65;pointer-events:none}
 .btn-white-bg{color:#fff;background:#000;border-color:transparent;border-width:0}
 .btn-white-bg.focus,.btn-white-bg:focus,.btn-white-bg:hover{color:#fff;background:#00e5ff;border-color:transparent}
-.btn-white-brd{color:#fff;background:0 0;border:none;}
+.btn-white-brd{color:#1106ff;background:0 0;border:none;}
 .btn-enroll {color: #1106ff;}
 .btn-white-brd.focus,.btn-white-brd:focus,.btn-white-brd:hover{color:#066fff;}
 .btn-default-bg{color:#000;background:#f3f4f5;border-color:transparent;border-width:0}
@@ -193,6 +193,7 @@ hr.vertical {
 .back-to-top.back-to-top-fade-out{opacity:.4}
 .back-to-top.back-to-top-fade-out:hover{opacity:1;transition-duration:.3s;transition-property:all;transition-timing-function:cubic-bezier(.7,1,.7,1)}
 .swiper-clients-img,.swiper-clients-img:hover{transition-duration:.2s;transition-property:all;transition-timing-function:cubic-bezier(.7,1,.7,1)}
+.swiper-small{width: 120px!important}
 .form-control{height:50px;font-size:14px;font-weight:400;color:#a6a7aa;background:#fafafa;border:none;box-shadow:none;border-radius:0;padding-left:15px}
 .form-control::-moz-placeholder{color:#a6a7aa}
 .form-control:-ms-input-placeholder{color:#a6a7aa}
@@ -218,6 +219,7 @@ hr.vertical {
 .bg-color-base{background:#00e5ff !important;}
 .bg-color-white{background:#fff!important}
 .bg-color-blue{background: #171f47;}
+.bg-color-skyblue{background: #00c0ff;}
 .bg-color-green {background: #00ff9c;}
 .bg-color-yellow {background: #ffd200;}
 .bg-color-black{background: #000;}
@@ -265,15 +267,21 @@ hr.vertical {
 	margin-left: -100px;
 	width: 680px;
 }
-.img-half-right{
-	float: right;
-	margin-top: -520px;
-	margin-right: -110px;
-	width: 700px;
-	opacity: 0.7;
+.img-half-right {
+    float: right;
+    margin-top: -845px;
+    margin-right: -110px;
+    width: 700px;
+    opacity: 0.7;
 }
 .big-txt {
 	line-height: 0.4em;
+}
+.sponsor-title {
+	font-weight: bold;
+	font-size: 1.6em;
+	padding-left: 250px;
+	text-align: center;
 }
 .sponsor {
     padding-top: 100px;
@@ -297,6 +305,18 @@ hr.vertical {
 
 /* Screen resolutiones 
 --------------------------------------------------------------------------- */
+
+/* empieza sponsors juntos - borrar*/
+@media (min-width: 1201px) {
+	.sponsor-min {display: block;margin-top: -260px;}
+	.sponsor-max {display: none;}
+}
+
+@media (max-width:1200px) {
+	.sponsor-min {display: none;}
+	.sonsor-max {display: block;}
+}
+/* termina sponsors juntos - borrar*/
 
 @media (min-width:992px){
 	.txt-right {
@@ -453,6 +473,13 @@ hr.vertical {
 	.work {
 		text-align: center;
 	}
+	.sponsor-title {
+		font-weight: bold;
+		font-size: 1em;
+		padding-left: 0px;
+		text-align: center;
+		color: #000;
+	}
 }
 
 @media (max-width:480px){
@@ -510,5 +537,11 @@ hr.vertical {
 	.separator {
 		height: 200px;
 		background-color: #fff;
+	}
+	.sponsor-title {
+		font-weight: bold;
+		font-size: 1em;
+		padding-left: 0px;
+		text-align: center;
 	}
 }
