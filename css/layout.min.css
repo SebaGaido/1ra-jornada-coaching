@@ -279,9 +279,10 @@ hr.vertical {
 }
 .sponsor-title {
 	font-weight: bold;
-	font-size: 1.6em;
+	font-size: 1.4em;
 	padding-left: 120px;
 	text-align: center;
+	margin-bottom: 70px;
 }
 .sponsor {
     padding-top: 100px;
@@ -308,7 +309,7 @@ hr.vertical {
 
 /* empieza sponsors juntos - borrar*/
 @media (min-width: 1201px) {
-	.sponsor-min {display: block;margin-top: -260px;}
+	.sponsor-min {display: block;margin-top: -290px;}
 	.sponsor-max {display: none;}
 }
 
@@ -546,6 +547,7 @@ hr.vertical {
 		font-size: 1em;
 		padding-left: 0px;
 		text-align: center;
+		margin-top: 70px;
 	}
 	.swiper-clients-img {
     	margin-top: 40px;
